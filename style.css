@@ -1,0 +1,53 @@
+/* Main game container */
+body {
+    background-color: rgb(168, 166, 166)
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Story output area */
+#story-output {
+    min-height: 300px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 4px;
+    white-space: pre-wrap;
+}
+
+/* Choice buttons container */
+#choices {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Choice button styling */
+.choice-btn {
+    padding: 0.5rem 1rem;
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choice-btn:hover {
+    background-color: #666666;
+}
+/* Inventory section */
+#inventory {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #2a2a2a;
+    border-radius: 4px;
+}
