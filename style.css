@@ -51,3 +51,49 @@ body {
     background-color: #2a2a2a;
     border-radius: 4px;
 }
+
+.save-load-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #333333;
+    border-radius: 4px;
+}
+
+.save-btn, .load-btn {
+    padding: 0.5rem 1rem;
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-btn:hover, .load-btn:hover {
+    background-color: #666666;
+}
+
+.load-btn:disabled {
+    background-color: #2a2a2a;
+    cursor: not-allowed;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    background-color: #4a4a4a;
+    color: white;
+    border-radius: 4px;
+    animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-20px); }
+    20% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
