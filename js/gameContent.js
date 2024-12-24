@@ -76,8 +76,8 @@ const gameContent = {
             },
             {
                 text: "Stay in bed.",
-                nextLocation: null, // TODO
-                action: () => { return false; }
+                nextLocation: "scene_5_E",
+                action: () => { return true; }
             }
         ]
     },
@@ -88,8 +88,8 @@ const gameContent = {
         choices: [
             {
                 text: "Go to the window",
-                nextLocation: null, // TODO
-                action: () => { return false; }
+                nextLocation: scene_5_F,
+                action: () => { return true; }
             },
             {
                 text: "Go to the door",
@@ -137,8 +137,8 @@ const gameContent = {
     },
     scene_5_D: {
         text: "It's too much to bare. You collapse back onto the bed, causing a symphony of creaks, and " +
-            "press the heels of your palms into your eyes to try to force the migraine away. You hear " +
-            "distant creaking of floor boards somewhere else in the house.",
+            "press the heels of your palms into your eyes to try to force the migraine away." +
+            "You hear floorboards creaking in the distance elsewhere in the house",
         choices: [
             {
                 text: "Steady yourself",
@@ -151,5 +151,28 @@ const gameContent = {
                 action: () => { return false; }
             }
         ]
-    }
-};
+    },
+    scene_5_E: {
+text: "Your eyes slowly drift close again. You woke up exhausted and you can't help but want to rest for a little while longer."+
+ "Despite the springs from the mattress practically digging into your body or the blanket on top of you making you want to itch your skin raw, you stay in bed."+
+
+"You hear floorboards creaking in the distance elsewhere in the house.",
+        choices:[
+            {
+                text: "",
+                    nextLocation: null,
+                action: () => [ return false; }
+            
+},
+  scene_5_F: {
+text: "You drag your aching body over to the window and peer outside."+
+    "The sky is blanketed by thick gray clouds, hiding any sunlight that might dare try to shine through."+
+ "You see other houses across the street - even see a man taking his garbage out to the curb. You feel safer knowing that people are nearby."+ 
+"You take note that the front yard in front of the house you are currently in is over grown. There's a mail box that appears to have been smashed to bits laying on the curb.",
+        choices:[
+            {
+                text: "",
+                    nextLocation: null,
+                action: () => [ return false; }
+            
+    
