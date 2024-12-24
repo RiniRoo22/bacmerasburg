@@ -20,7 +20,7 @@
         currentLocation: 'start',
         inventory: [],
         flags: {} // for tracking story progression
-    }
+    };
 
     const gameContent = {
         start: {
@@ -30,7 +30,7 @@
                     text: "Where am I?",
                     nextLocation: "scene_2",
                     action: () => {
-                        return true
+                        return true;
                     }
                 }
             ]
@@ -46,20 +46,20 @@
                     text: "Back to start",
                     nextLocation: "start",
                     action: () => {
-                        return true
+                        return true;
                     }
                 }
             ]
         }
-    }
+    };
 
     function displayStory(location) {
         const storyOutput = document.getElementById('story-output');
         const choicesDiv = document.getElementById('choices');
 
-        const currentScene = gameContent[location]
+        const currentScene = gameContent[location];
         storyOutput.textContent = currentScene.text;
-        choicesDiv.innerHTML = ""
+        choicesDiv.innerHTML = "";
         currentScene.choices.forEach((choice) => {
             const button = document.createElement('button');
             button.className = "choice-btn";
@@ -83,7 +83,7 @@
 
     function updateInventoryDisplay() {
         const inventoryList = document.getElementById('inventory-list');
-        inventoryList.innerHTML = ''
+        inventoryList.innerHTML = '';
         gameState.inventory.forEach(item => {
             const li = document.createElement('li');
             li.textContent = item;
