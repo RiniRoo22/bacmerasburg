@@ -62,7 +62,7 @@
         choicesDiv.innerHTML = ""
         currentScene.choices.forEach((choice) => {
             const button = document.createElement('button');
-            button.className = "choice-button";
+            button.className = "choice-btn";
             button.textContent = choice.text;
             button.addEventListener('click', () => makeChoice(choice));
             choicesDiv.appendChild(button);
